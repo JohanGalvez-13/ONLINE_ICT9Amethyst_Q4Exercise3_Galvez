@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Converting Centimeters to Feet</title>
+</head>
+<body bgcolor="turquoise">
+	<h1>Online Centimeters To Feet Converter</h1>
+	<input type="number" id="cm" placeholder="Input Units Here"><br>
+	<input type="submit" value="Convert" onclick="myConvertion()"><br>
+	<p id="convertion"></p>
+	<script>
+		function myConvertion() {
+			var cm = document.getElementById('cm').value;	
+			var converted = cm / 30.48;
+			document.getElementById('convertion').innerHTML = "The answer is " + converted;
+		}
+	</script>
+</body>
+</html>
